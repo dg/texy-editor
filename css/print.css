@@ -1,0 +1,83 @@
+/*
+	David Grudl CSS Framework
+	(c) 2004-2008 David Grudl. All rights reserved.
+	http://davidgrudl.com
+*/
+
+@import 'libs/reset.css';
+@import 'libs/classes.css';
+@import 'libs/fshl.css';
+
+
+
+/*------------------------------------------------------------------*/
+
+body, input, select, textarea {
+	font-family: Verdana, "Geneva CE", lucida, sans-serif;
+}
+
+
+h1, h2, h3, h4, .perex, #download {
+	font-family: Trebuchet MS,"Geneva CE",lucida,sans-serif;
+}
+
+
+body {
+	font-size: 13px; /* kvuli Mozilla & Webkit problemu s monospace fontem */
+	line-height: 1.65;
+	color: #444;
+	margin: 10px;
+	padding: 0;
+}
+
+
+textarea, #help, .htmltooltip {
+	display: none;
+}
+
+pre {
+	line-height: 1.4;
+}
+
+
+html {
+	height: 100%;
+}
+
+
+/* zarovnani textu */
+p { margin: 1em 0; padding: 0; }
+
+
+/* titulky */
+h1, h2, h3, h4 {
+	text-indent: 0px;
+	margin: 1.2em 0 0.7em;
+	color: #1e5eb6;
+}
+
+h1 { font-size: 185%; font-weight: normal; margin: .2em 0; }
+h2 { font-size: 150%; font-weight: normal; }
+h3 { font-size: 120%; color: black; }
+
+
+h1 small {
+	color: gray;
+	margin-left: 10px;
+}
+
+
+div#output, pre {
+	font-weight: normal;
+	line-height: 1.4;
+}
+
+form {
+	display: inline;
+}
+
+
+div.figure p {
+	text-align: center;
+	font-style: italic;
+}

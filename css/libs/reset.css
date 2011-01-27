@@ -1,0 +1,169 @@
+/*
+	David Grudl CSS Framework
+	(c) 2004-2008 David Grudl. All rights reserved.
+	http://davidgrudl.com
+	Version: 1 (2008-05-28)
+*/
+
+
+/*------------------------------------------------------------------*/
+
+
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	line-height: 1.5;
+	background: white;
+	color: black;
+	position: relative; /* kvuli IE7 a zoomingu */
+	font-size: 13px; /* kvuli Mozilla & Webkit problemu s monospace fontem */
+}
+
+
+/*------------------------------------------------------------------*/
+
+
+ol, ul, menu {
+	margin: 0 0 1.75em 1.75em;
+	padding: 0;
+}
+
+
+li {
+	margin: .1em 0 .1em 1.75em;
+	padding: 0;
+}
+
+
+form {
+	margin: 0;
+	padding: 0;
+}
+
+
+/*------------------------------------------------------------------*/
+
+
+table {
+	border-collapse: separate; /* or collapse? */
+	border-spacing: 0;
+}
+
+
+caption, th, td {
+	text-align: left;
+}
+
+
+/*------------------------------------------------------------------*/
+
+
+input, /*label, */select {
+	vertical-align: middle;
+}
+
+
+input, select, textarea {
+	font-size: 100%;   /* line-height neměnit */
+}
+
+
+/* IE Stretched Button Bug on WinXP - workaround (http://jehiah.cz/archive/button-width-in-ie) */
+input.button {
+	width: 0;
+	overflow: visible;
+}
+
+input.button[class] {
+	width: auto;   /* IE ignores [class] */
+}
+
+
+/*------------------------------------------------------------------*/
+
+
+img {
+	vertical-align: middle;
+	border: none;
+}
+
+
+/* pre s horizontalnim scrollbarem */
+pre {
+	overflow: auto;
+	=padding-bottom: 2em; /* zobrazi posledni radek v IE */
+}
+
+
+* html pre {
+	overflow-y: visible; /* odstrani vertikalni scrollbar v IE */
+}
+
+
+hr {
+	height: 0;
+	border: 0;
+	border-top: 1px solid black;
+}
+
+
+/*------------------------------------------------------------------*/
+
+
+/* bug s roztahovanim boxu */
+i, em {
+	margin-right: 0.1em
+}
+
+
+/* bug s roztahovanim mezer mezi radky */
+sub, sup {
+	vertical-align: baseline;
+	position: relative;
+}
+
+sub {
+	top: .4em;
+}
+
+sup {
+	bottom: .4em;
+}
+
+
+/* bug s chybejicim ukazatelem v IE */
+* html a {
+	cursor: hand;
+}
+
+
+acronym {
+	cursor: help;
+	border-bottom: 1px dotted #000;
+}
+
+
+/* Remove possible quote marks (") from <q>, <blockquote> */
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+}
+
+
+blockquote, q {
+	quotes: "" "";
+}
+
+
+q {
+	font-style: italic;
+}
+
+
+/* * html p { text-indent: expression( this.previousSibling.tagName.search(/H[1-6]/) == 0 ? "0": ""); } */
+h1+p, h2+p, h3+p, h4+p {
+	text-indent: 0;
+}

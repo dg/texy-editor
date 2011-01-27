@@ -1,0 +1,129 @@
+/*!
+	(c) David Grudl
+*/
+
+@import 'libs/reset.css';
+@import 'libs/classes.css';
+@import 'libs/fshl.css';
+
+
+
+/*------------------------------------------------------------------*/
+
+body, input, select, textarea {
+	font-family: Verdana, "Geneva CE", lucida, sans-serif;
+}
+
+
+h1, h2, h3, h4, .perex, #download {
+	font-family: Trebuchet MS,"Geneva CE",lucida,sans-serif;
+}
+
+
+body {
+	font-size: 80%;
+	line-height: 1.65;
+	color: #444;
+	margin: 10px;
+	padding: 0;
+}
+
+
+pre {
+	line-height: 1.4;
+}
+
+
+html {
+	height: 100%;
+}
+
+
+/* zarovnani textu */
+p { margin: 1em 0; padding: 0; }
+
+
+/* titulky */
+h1, h2, h3, h4 {
+	text-indent: 0px;
+	margin: 1.2em 0 0.7em;
+	color: #1e5eb6;
+}
+
+h1 { font-size: 185%; font-weight: normal; margin: .2em 0; }
+h2 { font-size: 150%; font-weight: normal; }
+h3 { font-size: 120%; color: black; }
+
+
+h1 small {
+	color: gray;
+	margin-left: 10px;
+}
+
+
+div#output, pre {
+	font-weight: normal;
+	line-height: 1.4;
+	overflow: auto;
+	width: 98%;
+}
+
+
+div#output {
+	float: right;
+	width: 49%;
+	height: 95%;
+	margin-top: -.7em;
+}
+
+form {
+	display: inline;
+}
+
+textarea {
+	float: left;
+	width: 49%;
+	height: 95%;
+	background: #F2F2F2;
+	border: 1px solid gray;
+	padding: 3px;
+}
+
+pre {
+	background: #F8F8F8;
+}
+
+#help {
+	position: absolute;
+	right: 1px;
+	top: 1px;
+	margin: 0;
+	font-size: 185%;
+	color: #1e5eb6;
+	border-bottom: 1px dotted black;
+	line-height: 1;
+}
+
+div.htmltooltip {
+	position: absolute;
+	z-index: 1000;
+	left: -1000px;
+	top: -1000px;
+	background: #272727;
+	border: 10px solid black;
+	color: white;
+	padding: 3px;
+	width: 250px;
+	font-size: 80%;
+}
+
+div.htmltooltip ul {
+	margin: 0;
+	padding: 0;
+}
+
+
+div.figure p {
+	text-align: center;
+	font-style: italic;
+}

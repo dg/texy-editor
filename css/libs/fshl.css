@@ -1,0 +1,89 @@
+/*
+	David Grudl CSS Framework
+	(c) 2004-2008 David Grudl. All rights reserved.
+	http://davidgrudl.com
+	Version: 1 (2008-05-28)
+*/
+
+
+/* (c) 2002 Martin Cohen - www.martincohen.info, modified by -dg- */
+
+/* P H P */
+.php-keyword1 {color:#e71818; font-weight:bold;}
+.php-keyword2 {color:#e71818; }
+.php-var {color:#d59401; font-weight:bold;}
+.php-num {color:#cd0673;}
+.php-quote {color:green; }
+.php-vquote {color:#0F0; font-weight:bold; }
+.php-comment {color:#929292; }
+
+/* H T M L */
+.html-tag {color:#598527; font-weight:bold;}
+.html-tagin {color:#89A315}
+.html-quote {color: #448CCB; font-weight: bold;}
+.html-comment {color:#929292; }
+.html-entity {color:#89A315}
+
+/* C S S */
+.css-class {color:#004A80; }
+.css-id {color:#7DA7D9; font-weight:bold; }
+.css-def {color:#5674B9;}
+.css-property {color:#003663; font-weight:bold; }
+.css-value {color:#448CCB;}
+.css-color {color:#007800;}
+.css-comment { color:#929292; }
+
+/* C P P */
+.cpp-keywords1 {color:blue; font-weight:bold;}
+.cpp-num {color:red;}
+.cpp-quote {color:brown; font-weight:bold;}
+.cpp-comment {color:green;}
+.cpp-preproc {color:grey;}
+
+/* J A V A */
+.java-keywords1 {color:blue; font-weight:bold;}
+.java-num {color:red;}
+.java-quote {color:brown; font-weight:bold;}
+.java-comment {color:#929292;}
+.java-preproc {color:grey;}
+
+/* J a v a S c r i p t */
+.js-out {color: #448CCB;}
+.js-keywords1 {color: #003663; font-weight: bold;}
+.js-num {color: red;}
+.js-quote {color: brown;}
+.js-comment {color: #929292; font-style: italic;}
+
+/* S Q L */
+.sql-keyword1 {color: #DD0000; font-weight: bold;}
+.sql-keyword2 {color: #DD2222;}
+.sql-keyword3 {color: #0000FF; font-weight: bold;}
+.sql-value {color: #5674B9;}
+.sql-comment {color: #929292;}
+.sql-num {color:#5674B9; font-weight: bold;}
+.sql-option {color: #004A80; font-weight: bold;}
+
+/* P y t h o n */
+.py-keyword1 {color: #0033CC; font-weight: bold;}
+.py-keyword2 {color: #CE3333; font-weight: bold;}
+.py-keyword3 {color: #660066; font-weight: bold;}
+.py-number {color: #993300;}
+.py-docstring {color: #E86A18;}
+.py-quote {color: #878787; font-weight: bold;}
+.py-comment {color: #929292; font-style: italic;}
+
+/* T E X Y */
+.texy-hlead {color:#44B; font-weight:bold;}			/* header leadIN == and leadOUT == */
+.texy-hbody {background-color:#eeF;color:#44B; }	/* header body */
+.texy-hr {color:#B44; }								/* horizontal line */
+
+.texy-code {color:#666;}							/* /---code */
+.texy-html {color:#6a6;}							/* /---html */
+.texy-text {color:#66a;}							/* /---html */
+
+.texy-err {background-color:red; color:white;}		/* error (TODO) */
+
+
+/* C O M M O N */
+.xlang {color:red; font-weight:bold;}
+.count {color:black; background-color:#FFF;}

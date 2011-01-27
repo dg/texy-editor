@@ -1,0 +1,109 @@
+/*
+	David Grudl CSS Framework
+	(c) 2004-2008 David Grudl. All rights reserved.
+	http://davidgrudl.com
+	Version: 1 (2008-05-28)
+*/
+
+
+.hidden, .print, .js {
+	display: none;
+}
+
+.blind  {
+	position:absolute;
+	top:-1000px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+.clear {
+	clear: both;
+}
+
+.default {
+	font-weight: bold;
+}
+
+.about {
+	border-bottom: 1px dotted gray;
+}
+
+
+.number {
+	text-align: right;
+	white-space: nowrap;
+}
+
+.wide {
+	width: 100%;
+}
+
+
+/*------------------------------------------------------------------*/
+
+
+.error, .alert, .required {
+	color: red;
+	font-weight: bold;
+}
+
+.notice {
+	color: yellow;
+}
+
+.success {
+	color: green;
+}
+
+
+/*------------------------------------------------------------------*/
+
+
+.left   { text-align: left !important }
+.center { text-align: center !important }
+.right  { text-align: right !important }
+
+
+img.left, .figure-left {
+	float: left;
+	clear: left;
+	margin: 5px 20px 5px 0;
+}
+
+img.right, .figure-right {
+	float: right;
+	clear: right;
+	margin: 5px 0 5px 20px;
+}
+
+
+/*------------------------------------------------------------------*/
+
+
+.noindent {
+	text-indent: 0 !important;
+}
+
+.nowrap {
+	white-space: nowrap !important;
+}
+
+.nodots {
+	list-style: none !important;
+}
+
+.noborder {
+	border: none !important;
+}
+
+
+
+/*------------------------------------------------------------------*/
+
+
+a[href^="error:"] {
+	background: red !important;
+	color: white !important;
+}
