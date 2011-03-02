@@ -42,7 +42,7 @@ if (isset($_POST['text'])) { // vystup pro AJAX
 	<link rel="stylesheet" type="text/css" media="all" href="css/screen.css">
 	<link rel="stylesheet" type="text/css" media="print" href="css/print.css">
 
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/htmltooltip.js"></script>
 	<script type="text/javascript">
 	<!--
@@ -54,10 +54,7 @@ if (isset($_POST['text'])) { // vystup pro AJAX
 			timeout: 4000
 		});
 
-		var operaFix;
-
 		$('textarea').keydown(function(e) {
-
 			clearTimeout(timeoutId);
 			timeoutId = setTimeout(function() {
 				var mask = new RegExp("[^a-zA-Z0-9_\\u00A1-\\uFFFF]", "g");
@@ -68,7 +65,7 @@ if (isset($_POST['text'])) { // vystup pro AJAX
 				});
 			}, 400);
 
-			if (e.which == 9 && !e.shiftKey && !e.ctrlKey && !e.altKey) { // TAB
+			if (e.which == 9 /* TAB */ && !e.shiftKey && !e.ctrlKey && !e.altKey) {
 				if (e.target.setSelectionRange) { // non-IE
 					var start = e.target.selectionStart;
 					var top = e.target.scrollTop;
@@ -80,16 +77,11 @@ if (isset($_POST['text'])) { // vystup pro AJAX
 				} else if (e.target.createTextRange) { // ie
 					document.selection.createRange().text = "\t";
 				}
-				operaFix = true;
-				e.preventDefault();
+				if ($.browser.opera) {
+					$(this).one('keypress', function(e) { return false; });
+				}
+				return false;
 			}
-
-		}).keypress(function(e) {
-			if (operaFix) {
-				operaFix = false;
-				e.preventDefault();
-			}
-
 		}).focus();
 	});
 
