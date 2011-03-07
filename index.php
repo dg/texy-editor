@@ -81,6 +81,10 @@ if (isset($_POST['text'])) { // vystup pro AJAX
 					$(this).one('keypress', function(e) { return false; });
 				}
 				return false;
+
+			} else if (e.which == 27 /* ESC */ && !e.shiftKey && !e.ctrlKey && !e.altKey) {
+				var inputs = $(':input');
+            	inputs.eq(inputs.index(e.target) - inputs.length + 1).focus();
 			}
 		}).focus();
 	});
